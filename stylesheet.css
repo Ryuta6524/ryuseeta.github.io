@@ -1,0 +1,155 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+.header-logo {
+  float: left;
+}
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+.header-login {
+  float: right;
+  background-color: rgba(255,255,255,0.3);
+  transition: all 0.5s;
+}
+.header-login a {
+  display: block;
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+}
+.header-login:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color:white;
+  text-align: center;
+}
+.title{
+  width:1170px;
+  margin: 0 auto;
+}
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing:5px;
+}
+.top-wrapper p { 
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+.btn {
+  opacity: 0.8;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+}
+.new {
+  background-color: #239b76;
+  margin: 15px 0 15px 0;
+}
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+.twitter {
+  background-color: #55acee;
+}
+.fa {
+  margin-right: 5px;
+}
+.btn:hover {
+  opacity: 1.0;
+}
+.lesson-wrapper {
+  height: 580px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.heading {
+  padding: 80px 0 50px 0;
+  color: #5f5d60;
+}
+.heading h2 {
+  font-weight:normal;
+}
+.lesson {
+  width: 25%;
+  float: left;
+}
+.lesson-icon {
+  position:relative;
+}
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+.text {
+  width: 80%;
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 15px;
+  color: #b3aeb5;
+}
+
+.message-wrapper {
+  padding-bottom: 80px;
+  text-align: center;
+}
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+.message:active {
+  box-shadow: none;
+  position:relative;
+  top: 7px;
+}
+
+footer {
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+}
+.progate {
+  width: 124px;
+}
+footer p {
+  font-size: 12px;
+  color: #b3aeb5;
+}
